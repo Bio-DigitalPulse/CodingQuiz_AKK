@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code-Quiz</title>
+    <link rel="stylesheet" href=".\assets\css\style.css">
+   
+</head>
+
+<body>
+    <div class="container child">
+    <header>
+        <nav>
+            <h2>Javascript Code Quiz</h2>
+            <h4 class='func' id='timecounter'>Timer :<span>75</span></h4>
+            <a href='.\score.html'>View Your Betters</a>
+        </nav>
+    </header>
+    </div>
+
+    <main>
+        <div class="container parent">
+            <div class="hide" id="question-container">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer1</button>
+                    <button class="btn">Answer2</button>
+                    <button class="btn">Answer3</button>
+                    <button class="btn">Answer4</button>
+
+                </div>
+            </div>
+        
+
+        <div class="controls child-2">
+            <p id='info'>Javascript knowledge is essential to be a successful programmer.
+                <br>
+                The following questions will test your understanding of the material.
+                <br>
+                Are you ready?
+            </p>
+        </br>
+            <button class="start-btn btn" id="start-btn">Born Ready</button>
+            <button class="next-btn btn hide" id="next-btn">Next</button> 
+        </div>
+        </div>
+    </main>
+
+    <footer>
+
+            <div class="hide" id="addscore">
+                <h5><span id='score'></span></h5>
+                <input type='text' placeholder='Enter your initials'
+                id='inputScore'>
+                <button class='btn' id='score-btn'>Submit</button>
+            </div>
+        
+
+    </footer>
+<script src='.\assets\js\func.js'></script>
+</body>
+</html>
