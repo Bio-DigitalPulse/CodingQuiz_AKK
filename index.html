@@ -1,64 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code-Quiz</title>
-    <link rel="stylesheet" href=".\assets\css\style.css">
-   
+    <title>Code Quiz Challenge</title>
+    <link rel="stylesheet" type="text/css" href=".\assets\css\style.css">
 </head>
 
 <body>
-    <div class="container child">
-    <header>
-        <nav>
-            <h2>Javascript Code Quiz</h2>
-            <h4 class='func' id='timecounter'>Timer :<span>75</span></h4>
-            <a href='.\score.html'>View Your Betters</a>
-        </nav>
-    </header>
-    </div>
+    <div class="container">
 
-    <main>
-        <div class="container parent">
-            <div class="hide" id="question-container">
-                <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer1</button>
-                    <button class="btn">Answer2</button>
-                    <button class="btn">Answer3</button>
-                    <button class="btn">Answer4</button>
+        <div id="startpage">
+            <h2>This quiz will assess your knowledge</h2>
+            <h2>of various program coding concepts.</h2>
+            <button id="startbtn">Start Quiz</button>
+            <button id="startPageHighscore" onclick="showHighscore()">High Scores</button>
+        </div>
 
+        <div id="quiz">
+            <div id="timer">Time left: </div>
+            <div id="questions">
+                <p>Questions Placeholder</p>
+            </div>
+            <button id="a" onclick="checkAnswer('a')">A</button>
+            <button id="b" onclick="checkAnswer('b')">B</button>
+            <button id="c" onclick="checkAnswer('c')">C</button>
+            <button id="d" onclick="checkAnswer('d')">D</button>
+            <div id="result"></div>
+        </div>
+        <div id="gameover">
+            <div id="finalScore"></div>
+            <input type="text" size="40" placeholder="Enter you initials for high score" name="intials" id="initials" />
+            <button id="submitScore">Submit Score</button>
+        </div>
+        <div id=highscoreContainer>
+            <div id="high-scorePage">
+                <div id="highscore-header">
+                    <h3>Player Initials</h3>
+                    <h3>Score</h3>
                 </div>
+                <div id="highscore-initials"></div>
+                <div id="highscore-score"></div>
             </div>
-        
-
-        <div class="controls child-2">
-            <p id='info'>Javascript knowledge is essential to be a successful programmer.
-                <br>
-                The following questions will test your understanding of the material.
-                <br>
-                Are you ready?
-            </p>
-        </br>
-            <button class="start-btn btn" id="start-btn">Born Ready</button>
-            <button class="next-btn btn hide" id="next-btn">Next</button> 
-        </div>
-        </div>
-    </main>
-
-    <footer>
-
-            <div class="hide" id="addscore">
-                <h5><span id='score'></span></h5>
-                <input type='text' placeholder='Enter your initials'
-                id='inputScore'>
-                <button class='btn' id='score-btn'>Submit</button>
+            <div id="endGameBtns">
+                <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+                <button id="clearHighscore" onclick="clearScore()">Clear Scores</button>
             </div>
-        
-
-    </footer>
-<script src='.\assets\js\func.js'></script>
+        </div>
+    </div>
+    <script src=".\assets\js\func.js"></script>
 </body>
+
 </html>
