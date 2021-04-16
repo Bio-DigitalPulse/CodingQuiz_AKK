@@ -7,4 +7,15 @@ Correct answers will provide the user with an additional point, out of a total o
 Upon completion of this quiz, the user will have the opportunity to enter their intials into a highscore page on the push of the submit button, displaying their game and identity information, encouraging positive competition among fellow programmers.
 
 
-The last step is for the user to decide whether they would like to restart the quiz, with another selct butoon with the option to clear the previous highscores.
+The last step is for the user to decide whether they would like to restart the quiz, with another select button with the option to clear the previous highscores.
+
+
+The link to the deployed quiz can be found here:
+https://ascendedkrishna.github.io/CodingQuiz_AKK/
+
+The Github account link can be found here:
+https://github.com/ascendedkrishna/CodingQuiz_AKK.git
+
+
+Images showing the webpage while deployed can be found here:
+.\CodingQuiz_AKK\assets\images

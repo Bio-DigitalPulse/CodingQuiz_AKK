@@ -43,11 +43,12 @@ input{
 }
   
 button {
-  display: inline-block;
+  display: inline;
   font-family: sans-serif;
   background-color: purple;
   border-radius: 10px;
   border: 3px double #cccccc;
+  transition-duration: 0.4s;
   color: #eeeeee;
   text-align: center;
   font-size: 15px;
@@ -58,14 +59,11 @@ button {
   
 button:hover{
   box-shadow: 4px 3px 6px purple;
+  background-color: white;
+  color: black;
 }
   
-#startpage{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-  
+
 #timer{
   font-family: sans-serif;
   background-color: purple;
@@ -75,6 +73,13 @@ button:hover{
   text-align: center;
 }
 
+#startpage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+
 #quiz {
   display: none;
 }
@@ -82,20 +87,9 @@ button:hover{
 #result {
   display: none;
 }
+
   
-#gameover {
-  text-align: center;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-}
-  
-#highScore{
-  height: 1.5rem;
-  border: groove 2px;
-}
-  
-#high-scorePage{
+#highscore-page{
   display: none;
   width: 50%;
   border: solid;
@@ -115,7 +109,7 @@ button:hover{
   font-family: sans-serif;
 }
 
-#highscoreContainer{
+#highscore-container{
   height: 100%;
   width: 100%;
   display: none;
@@ -142,8 +136,15 @@ button:hover{
   font-family: sans-serif;
   font-weight: bold;
 }
+
+#gameover {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
   
-#finalScore{
+#final-score{
   padding-bottom: 0.5rem;
   font-size: x-large;
   font-family: sans-serif;
